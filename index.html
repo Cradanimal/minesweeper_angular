@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="minesweeper">
+<head>
+
+  <title>Node/Angular Minesweeper App</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="node_modules/angular/angular.js"></script>
+  <script src="src/index.js"></script>
+</head>
+<body  ng-controller="mainController">
+
+  <form>
+    <input type="number" name="gridInput" ng-model="gridSize"  value={gridSize} max="30" min="4">
+    <button ng-model="getSize" ng-click="getSize()"></button>
+  </form>
+  <table cellspacing="2" class="mine-sweeper">
+    <tr ng-repeat="row in grid track by $index" >
+      <td ng-repeat="cell in row track by $index" ng-click="test(this)" ng-class="{bombed: cell.active}">
+        {{cell.val}}
+      </td>
+    </tr>
+  </table>
+  <button ng-click="swapVal(1,1)"></button>
+  <div>Hello Conrad</div>
+</body>
+</html>

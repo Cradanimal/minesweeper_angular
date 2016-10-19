@@ -1,0 +1,36 @@
+body.caution {
+      cursor: help ;
+      }
+  table.mine-sweeper {}
+  table.mine-sweeper td {
+    background-image: url('http://i.imgur.com/bGT8xGEb.jpg');
+      background-color: #F0F0F0 ;
+      border: 1px solid #333333 ;
+      cursor: pointer ;
+      height: 25px ;
+      line-height: 25px ;
+      overflow: hidden ;
+      text-align: center ;
+      width: 25px ;
+      }
+  table.mine-sweeper td.active {
+      background-image: url('http://i.imgur.com/HM1e3Tbb.jpg');
+      background-color: #D8D8D8 ;
+      }
+  table.mine-sweeper td.bomb {
+      font-weight: bold ;
+      }
+  table.mine-sweeper td.bombed {
+      background-color: #FFD0D0 ;
+      background-image: url('http://i.imgur.com/UFmXprFb.jpg');
+      color: #CC0000 ;
+      font-weight: bold ;
+      }
+  table.mine-sweeper td.caution {
+      background-color: #FFD0D0 ;
+      color: #CC0000 ;
+      font-weight: bold ;
+      }
+  .test {
+    font-weight: bolder;
+  }
