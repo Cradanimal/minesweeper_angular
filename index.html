@@ -15,8 +15,8 @@
   </form>
   <table cellspacing="2" class="mine-sweeper">
     <tr ng-repeat="row in grid track by $index" >
-      <td ng-repeat="cell in row track by $index" ng-click="test(this)" ng-class="{bombed: cell.bomb}">
-        {{cell.touchingBombs}}
+      <td ng-repeat="cell in row track by $index" ng-click="revealCell(this)" ng-class="{bombed: cell.bomb, active : cell.active}">
+        {{cell.active === true ? cell.touchingBombs : ''}}
       </td>
     </tr>
   </table>

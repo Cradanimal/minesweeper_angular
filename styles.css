@@ -3,7 +3,7 @@ body.caution {
       }
   table.mine-sweeper {}
   table.mine-sweeper td {
-    background-image: url('http://i.imgur.com/bGT8xGEb.jpg');
+      background-image: url('http://i.imgur.com/bGT8xGEb.jpg');
       background-color: #F0F0F0 ;
       border: 1px solid #333333 ;
       cursor: pointer ;
